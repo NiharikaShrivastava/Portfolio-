@@ -34,15 +34,123 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+
+  <!-- ✅ UPDATED STYLING: Put inside <style> or CSS -->
+    <style>
+      .certificate-container img {
+        max-width: 90%;
+        height: auto;
+      }
+    
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+      }
+    
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+       /* ✨ Glassy Card Styling (✨ NEW) */
+       .glassy-card {
+        background: rgba(255, 255, 255, 0.1);  /* semi-transparent background */
+        border-radius: 15px;
+        backdrop-filter: blur(10px);           /* blur effect */
+        -webkit-backdrop-filter: blur(10px);   /* Safari support */
+        padding: 20px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+    </style>
+
+<style>
+  .shadow-box {
+    width: 80%;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+      0 10px 25px rgba(0, 0, 0, 0.1),
+      0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    text-align: center;
+  }
+
+  .shadow-box {
+  background-color: #f5f3ef; /* Grayish creamy background */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  margin: 50px auto;
+  max-width: 1100px;
+}
+
+.download-btn {
+  background-color: #147fe4;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #2e2924;
+  transform: translateY(-2px);
+}
+
+#achievements {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#achievements h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.achievement-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.achievement-box {
+  width: 180px;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.achievement-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+
+
+</style>
+
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
+  <header id="header" class="header dark-background glassy-black d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/animated-img.png" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -64,6 +172,8 @@
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
+        <li><a href="#achievements"><i class="bi bi-hdd-stack navicon"></i> Achievements</a></li>
+        <li><a href="certificates.html"><i class="bi bi-award navicon"></i> Certificates</a></li>
       <!--  <li><a href="#certificates"><i class="bi bi-hdd-stack navicon"></i> Certificates</a></li>   -->
       <!--  <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>  -->
         <!--  <ul>
@@ -91,9 +201,9 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background glassy-black">
 
-      <img src="assets/img/bg-img.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets\img\profile-bg-img.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Niharika Shrivastava</h2>
@@ -105,20 +215,44 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I'm a creative UI/UX designer and web developer with a passion for crafting user-friendly, responsive websites. I specialize in designing intuitive interfaces and turning them into clean, functional code using HTML, CSS, and modern design tools. I'm always exploring new ideas to improve user experience and bring digital concepts to life.</p>
-      </div><!-- End Section Title -->
+     <!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2 style="text-align: center;">About</h2>
+  
+  <div style="
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    box-shadow:
+      5px 5px 15px rgba(0, 0, 0, 0.3),
+      -5px -5px 15px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    transform: perspective(1000px) rotateX(2deg);
+  ">
+    <p>
+      I'm a creative UI/UX designer and web developer with a passion for <br>
+      crafting user-friendly, responsive websites. I specialize in designing intuitive interfaces <br>
+      and turning them into clean, functional code using HTML, CSS, and modern design tools. I'm always <br>
+      exploring new ideas to improve user experience and bring digital concepts to life.
+    </p>
+  </div>
+</div>
+<!-- End Section Title -->
+
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets\img\photo.jpg" class="img-fluid" alt="Profile Photo" style="border-radius: 15px;">
           </div>
           <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <!-- <h2>UI/UX Designer &amp; Web Developer.</h2> -->
             <p class="fst-italic py-3">
               UI/UX designer and web developer passionate about creating seamless digital experiences.
             </p>
@@ -126,7 +260,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 March 2005</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.portfolio.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9264102561</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Patna, Bihar</span></li>
                 </ul>
@@ -140,9 +274,10 @@
                 </ul>
               </div>
             </div>
+            <div class="shadow-box">
             <p class="py-3">
               As a student and aspiring UI/UX designer and web developer, I'm passionate about creating intuitive user interfaces and developing responsive websites. I strive to blend design aesthetics with functionality, ensuring seamless experiences for users. Constantly learning and refining my skills, I'm eager to apply my knowledge and contribute to innovative projects in the tech world.
-
+            </div>
 
             </p>
           </div>
@@ -213,51 +348,87 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">80%</i></span>
+              <span class="skill" style="display: flex; align-items: center; gap: 10px;">
+                <!-- ✅ Added HTML logo -->
+                <img src="assets/img/html-logo.jpg" alt="HTML Logo" style="width: 24px; height: 24px; object-fit: contain;">
+                <span>HTML</span>
+                <i class="val" style="margin-left: auto;">80%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
+            
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <span class="skill" style="display: flex; align-items: center; gap: 10px;">
+                <!-- ✅ Refined: Logo size and alignment adjusted -->
+                <img src="assets/img/css-logo.jpg" alt="CSS Logo" style="width: 24px; height: 24px; object-fit: contain;">
+                <span>CSS</span>
+                <i class="val" style="margin-left: auto;">90%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
+            
+            
 
             <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <span class="skill" style="display: flex; align-items: center; gap: 10px;">
+                <!-- ✅ Added JavaScript logo -->
+                <img src="assets/img/javascript-logo.jpg" alt="JavaScript Logo" style="width: 24px; height: 24px; object-fit: contain;">
+                <span>JavaScript</span>
+                <i class="val" style="margin-left: auto;">75%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
+            
 
           </div>
 
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>CPP</span> <i class="val">80%</i></span>
+              <span class="skill" style="display: flex; align-items: center; gap: 10px;">
+                <!-- ✅ Added C++ logo -->
+                <img src="assets/img/cpp-logo.jpg" alt="C++ Logo" style="width: 24px; height: 24px; object-fit: contain;">
+                <span>CPP</span>
+                <i class="val" style="margin-left: auto;">80%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
+            
 
             <div class="progress">
-              <span class="skill"><span>JAVA</span> <i class="val">80%</i></span>
+              <span class="skill" style="display: flex; align-items: center; gap: 10px;">
+                <!-- ✅ Added Java logo -->
+                <img src="assets/img/java-logo.jpg" alt="Java Logo" style="width: 24px; height: 24px; object-fit: contain;">
+                <span>JAVA</span>
+                <i class="val" style="margin-left: auto;">80%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
+            
 
             <div class="progress">
-              <span class="skill"><span>Figma</span> <i class="val">75%</i></span>
+              <span class="skill" style="display: flex; align-items: center; gap: 10px;">
+                <!-- ✅ Added Figma logo -->
+                <img src="assets/img/figma-logo.jpg" alt="Figma Logo" style="width: 24px; height: 24px; object-fit: contain;">
+                <span>Figma</span>
+                <i class="val" style="margin-left: auto;">75%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
-
+            
           </div>
 
         </div>
@@ -265,97 +436,93 @@
       </div>
 
     </section><!-- /Skills Section -->
+<!-- Resume Section -->
+<section id="resume" class="resume section">
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+  <div class="shadow-box">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>I am a dedicated and driven student with a passion for UI/UX design and web development. Currently honing my skills in creating responsive, user-centric websites and visually engaging interfaces. I’ve worked on various projects where I applied my knowledge of HTML, CSS, and design principles to build functional and aesthetically pleasing digital experiences. As I continue learning, I am eager to contribute to real-world projects and grow as a developer and designer.
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Resume</h2>
+      <p>I am a dedicated and driven student with a passion for UI/UX design and web development. Currently honing my skills in creating responsive, user-centric websites and visually engaging interfaces...</p>
+    </div><!-- End Section Title -->
 
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summer Training</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Data Structures and Algorithms - Theory to Practice</h4>
-              <p><em>Completed an intensive summer training program on Data Structures and Algorithms, covering key concepts such as arrays, linked lists, stacks, queues, trees, graphs, sorting, searching, and dynamic programming. Gained hands-on experience in problem-solving and algorithm optimization.</em></p>
-              <ul>
-                <li>Skill Development, LPU</li>
-                <li>June 2024 - July 2024</li>
-                
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>B-Tech CSE  </h4>
-              <h5>2022 - 2026</h5>
-              <p><em>Lovely Professional University, Punjab</em></p>
-             <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Higher Secondary</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>D.A.V Public School, Patna</em></p>
-            <!--  <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Matriculation </h4>
-              <h5>2019 - 2020</h5>
-              <p><em>D.A.V Public School, Patna</em></p>
-            <!--  <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-            </div><!-- Edn Resume Item -->
-
+    <div class="container">
+      <div class="row">
+        <!-- LEFT SIDE -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- Training -->
+          <h3 class="resume-title">Summer Training</h3>
+          <div class="resume-item pb-0">
+            <h4>Data Structures and Algorithms - Theory to Practice</h4>
+            <p><em>Completed an intensive summer training program on DSA...</em></p>
+            <ul>
+              <li>Skill Development, LPU</li>
+              <li>June 2024 - July 2024</li>
+            </ul>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title"><a href="certificates.html" class="stretched-link"></a>Certificates</h3>
-            <div class="resume-item">
-              <h4>Data Structures and Algorithms - Theory to Practice</h4>
-              <h5>June 2024 - July 2024</h5>
-              <p><em>Skill Development, LPU </em></p>
-              
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>UI/UX For Beginners</h4>
-              <h5>2024</h5>
-              <p><em>Great Learning </em></p>
-              
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Figma Fusion </h4>
-              <h5>2025</h5>
-              <p><em>Skill Development, LPU</em></p>
-              
-            </div><!-- Edn Resume Item -->
-
+          <!-- Education -->
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>B-Tech CSE</h4>
+            <h5>2022 - 2026</h5>
+            <p><em>Lovely Professional University, Punjab</em></p>
           </div>
-
+          <div class="resume-item">
+            <h4>Higher Secondary</h4>
+            <h5>2021 - 2022</h5>
+            <p><em>D.A.V Public School, Patna</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Matriculation</h4>
+            <h5>2019 - 2020</h5>
+            <p><em>D.A.V Public School, Patna</em></p>
+          </div>
         </div>
 
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="resume-title"><a href="certificates.html" class="stretched-link"></a>Certificates</h3>
+          <div class="resume-item">
+            <h4>Data Structures and Algorithms - Theory to Practice</h4>
+            <h5>June 2024 - July 2024</h5>
+            <p><em>Skill Development, LPU</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>UI/UX For Beginners</h4>
+            <h5>2024</h5>
+            <p><em>Great Learning</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Figma Fusion</h4>
+            <h5>2025</h5>
+            <p><em>Skill Development, LPU</em></p>
+          </div>
+        </div>
       </div>
+    </div>
 
-    </section><!-- /Resume Section -->
+  </div> <!-- End of Shadow Box -->
+
+</section><!-- /Resume Section -->
+<div class="container text-center mt-4 mb-5">
+  <a href="assets\img\Specialised CV Template.pdf" download class="btn btn-primary download-btn">
+    Download Resume
+  </a>
+</div>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Welcome to my portfolio! Here, you'll find a collection of my work as an aspiring UI/UX designer and web developer. Each project reflects my passion for creating clean, user-friendly designs and responsive websites using HTML, CSS, and modern design tools. I’m constantly learning and exploring new ideas to improve the digital experiences I create. Feel free to explore my projects and see how I bring creativity and code together.</p>
+        <h2 style="text-align: center;">Portfolio</h2>
+        <p style="text-align: center;">Welcome to my portfolio! Here, you'll find a collection of my work as an aspiring UI/UX designer and <br>
+          web developer. Each project reflects my passion for creating clean, user-friendly <br>
+          designs and responsive websites using HTML, CSS, and modern design tools. I’m<br> constantly learning and exploring new ideas to improve the digital experiences <br>
+          I create. Feel free to explore my projects and see how I bring creativity and code together.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -529,46 +696,116 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
+        <h2 style="text-align: center;">Projects</h2>
         <p></p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
-
+      
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div> -->
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Hospital Management System</a></h4>
-              <p class="description">This is a Hospital Management System web application built using HTML, CSS, and JavaScript for the frontend, and Firebase as the backend. It provides a seamless experience for managing hospital-related activities such as doctor, patient, and receptionist interactions.</p>
+      
+              <!-- UPDATED: Project Image -->
+              <img src="assets\img\Hospital-Management-System.jpg" alt="Hospital Management System" class="img-fluid my-2 rounded shadow">
+      
+              <!-- UPDATED: Short Description -->
+              <p class="description">Web app for managing doctor, patient, and receptionist tasks using Firebase and JS.</p>
+      
+              <!-- UPDATED: Tools Used -->
+              <div style="background-color: #f5f3ef; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
+                <strong>Tools Used:</strong> HTML, CSS, JavaScript, Firebase
+              </div>
+      
+              <!-- UPDATED: GitHub Button -->
+              <a href="https://github.com/NiharikaShrivastava/Hospital-Management-System" target="_blank" class="btn btn-outline-primary btn-sm">
+                <i class="fab fa-github me-1"></i> View on GitHub
+              </a>
             </div>
           </div>
           <!-- End Service Item -->
-
+           
+      
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div> -->
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Social Media Recommender System</a></h4>
-              <p class="description">I developed a Social Media Recommender System using Python on Google Colab. The system suggests relevant content to users based on their interests and past behavior. It uses basic recommendation techniques like content-based and collaborative filtering, analyzing user interactions such as likes and follows. This project focuses on enhancing user experience by providing personalized suggestions while being lightweight and easy to run entirely in Colab without additional tools.</p>
+      
+              <!-- UPDATED: Project Image -->
+              <img src="assets\img\social-media-logo-img222.png" alt="Recommender System" class="img-fluid my-2 rounded shadow">
+      
+              <!-- UPDATED: Short Description -->
+              <p class="description">Content-based recommender system built with Python and Colab for smart suggestions.</p>
+      
+              <!-- UPDATED: Tools Used -->
+              <div style="background-color: #f5f3ef; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
+                <strong>Tools Used:</strong> Python, Google Colab, Pandas, Scikit-learn
+              </div>
+      
+              <!-- UPDATED: GitHub Button -->
+              <a href="https://github.com/your-username/social-media-recommender" target="_blank" class="btn btn-outline-primary btn-sm">
+                <i class="fab fa-github me-1"></i> View on GitHub
+              </a>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
+          <!-- End Service Item -->
+      
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div> -->
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Fruit Detection</a></h4>
-              <p class="description">I developed a Fruit Detection system using Python on Google Colab. The project uses image processing and machine learning techniques to identify different types of fruits from images. By training a model on a labeled fruit dataset, the system can accurately classify fruits like apples, bananas, oranges, and more. This project helps in automating fruit recognition, which can be useful in smart farming, inventory management, and health-based applications.
-
-              </p>
+      
+              <!-- UPDATED: Project Image -->
+              <img src="assets\img\fruit-img.jpeg" alt="Fruit Detection" class="img-fluid my-2 rounded shadow">
+      
+              <!-- UPDATED: Short Description -->
+              <p class="description">Fruit classification system using ML models on image data. Runs fully in Colab.</p>
+      
+              <!-- UPDATED: Tools Used -->
+              <div style="background-color: #f5f3ef; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
+                <strong>Tools Used:</strong> Python, OpenCV, TensorFlow, Google Colab
+              </div>
+      
+              <!-- UPDATED: GitHub Button -->
+              <a href="https://github.com/your-username/fruit-detection" target="_blank" class="btn btn-outline-primary btn-sm">
+                <i class="fab fa-github me-1"></i> View on GitHub
+              </a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
+      
+        </div>
+      </div>
+      
 
         </div>
 
       </div>
 
     </section><!-- /Services Section -->
+
+    <!--Achievements   -->
+    <section id="achievements">
+      <h2><b>Achievements</b></h2>
+      <div class="achievement-container">
+        <div class="achievement-box" style="background-color: #c41173;">
+          <img src="assets\img\silver-img.jpeg" alt="Logo 1">
+          <p><b>Hacker Rank</b> Problem Solver CPP</p>
+        </div>
+        <div class="achievement-box" style="background-color: #90be6d;">
+          <img src="assets\img\gold-img.png" alt="Logo 2">
+          <p><b>Code Chef</b> Problem Solver Java</p>
+        </div>
+        <div class="achievement-box" style="background-color: #f9844a;">
+          <img src="assets\img\bronze-img.png" alt="Logo 3">
+          <p><b>Code Chef</b> Problem Solver CPP</p>
+        </div>
+        <!-- Add more achievements here -->
+      </div>
+    </section>
+    
 
 
     <!-- Contact Section -->
