@@ -21,15 +21,44 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- ✅ UPDATED STYLING: Put inside <style> or CSS -->
+<style>
+  .certificate-container img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+   /* ✨ Glassy Card Styling (✨ NEW) */
+   .glassy-card {
+    background: rgba(255, 255, 255, 0.1);  /* semi-transparent background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);           /* blur effect */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+</style>
+
+  
 </head>
 
 <body class="service-details-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
+  <header id="header" class="header dark-background glassy-black d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets\img\animated-img.png" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -49,12 +78,13 @@
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="certificates.html"><i class="bi bi-award navicon"></i> Certificates</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <div class="page-title dark-background">
+    <div class="page-title dark-background glassy-black">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">Certificates</h1>
         <nav class="breadcrumbs">
@@ -71,28 +101,89 @@
       <div class="container">
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
               <a href="#" class="active" onclick="showCertificate('cert1')">Certificate 1</a>
               <a href="#" class="active" onclick="showCertificate('cert2')">Certificate 2</a>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <h3>Certificate Viewer</h3>
-            <p>Click on the certificate name to view it below.</p>
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-delay="200">
 
-            <div id="cert1" class="certificate-container" style="display: none;">
-              <embed src="assets\img\Skill Development Course DSA.pdf" type="application/pdf" width="100%" height="600px">
-            </div>
+            
+              <h3 class="mb-4">Certificate Viewer</h3>
+              <p>Click on a certificate name to view it below.</p>
+            
+            <!-- Certificates Side-by-Side Layout -->
+<div class="container">
+  <div class="row justify-content-center">
 
-            <div id="cert2" class="certificate-container" style="display: none;">
-              <embed src="assets\img\Certificate Figma Fusion.pdf" type="application/pdf" width="100%" height="600px">
-            </div>
+    <!-- Certificate 1 -->
+    <div class="col-md-5 text-center mb-4 glassy-card">
+      <p>📜 <strong>Skill Development Course – DSA</strong></p>
 
-          </div>
-        </div>
-      </div>
+      <!-- Preview Image -->
+      <img src="assets/img/Skill Development Course DSA.jpg" alt="DSA Certificate Preview" class="img-fluid mb-2" style="max-height: 200px;">
+
+      <!-- View Button (💡 Opens full image in new tab) -->
+      <button class="btn btn-primary" onclick="viewCertificate('assets/img/Skill Development Course DSA.jpg')">View</button>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="col-md-5 text-center mb-4 glassy-card">
+      <p>📜 <strong>Skill Development Course – Figma Fusion</strong></p>
+
+      <!-- Preview Image -->
+      <img src="assets/img/Skill Development Course Figma Fusion.jpg" alt="Figma Certificate Preview" class="img-fluid mb-2" style="max-height: 200px;">
+
+      <!-- View Button (💡 Opens full image in new tab) -->
+      <button class="btn btn-primary" onclick="viewCertificate('assets/img/Skill Development Course Figma Fusion.jpg')">View</button>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="col-md-5 text-center mb-4 glassy-card">
+      <p>📜 <strong>Hacker Rank – Java</strong></p>
+
+      <!-- Preview Image -->
+      <img src="assets/img/cert-java-img.jpg" alt="Java Certificate Preview" class="img-fluid mb-2" style="max-height: 200px;">
+
+      <!-- View Button (💡 Opens full image in new tab) -->
+      <button class="btn btn-primary" onclick="viewCertificate('assets/img/cert-java-img.jpg')">View</button>
+    </div>
+
+    <!-- Certificate 4 -->
+    <div class="col-md-5 text-center mb-4 glassy-card">
+      <p>📜 <strong>Code Chef – CPP</strong></p>
+
+      <!-- Preview Image -->
+      <img src="assets/img/Code Chef CPP.jpg" alt="CPP Certificate Preview" class="img-fluid mb-2" style="max-height: 200px;">
+
+      <!-- View Button (💡 Opens full image in new tab) -->
+      <button class="btn btn-primary" onclick="viewCertificate('assets/img/Code Chef CPP.jpg')">View</button>
+    </div>
+
+    <!-- Certificate 5 -->
+    <div class="col-md-5 text-center mb-4 glassy-card">
+      <p>📜 <strong>Code Chef – CPP</strong></p>
+
+      <!-- Preview Image -->
+      <img src="assets/img/Code Chef Java.jpg" alt="Java Certificate Preview" class="img-fluid mb-2" style="max-height: 200px;">
+
+      <!-- View Button (💡 Opens full image in new tab) -->
+      <button class="btn btn-primary" onclick="viewCertificate('assets/img/Code Chef Java.jpg')">View</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+              
+            
+
+         
     </section>
   </main>
 
@@ -125,12 +216,22 @@
   <!-- JavaScript to switch certificates -->
   <script>
     function showCertificate(id) {
-      document.querySelectorAll('.certificate-container').forEach(el => {
-        el.style.display = 'none';
-      });
-      document.getElementById(id).style.display = 'block';
-    }
+  document.querySelectorAll('.certificate-container').forEach(el => {
+    el.style.display = 'none';
+    
+  });
+  document.getElementById(id).style.display = 'block';
+}
+
   </script>
+
+
+<script>
+  function viewCertificate(imagePath) {
+    window.open(imagePath, '_blank');
+  }
+</script>
+
 
 </body>
 
